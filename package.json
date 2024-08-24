@@ -63,10 +63,10 @@
     "vitest": "^2.0.5"
   },
   "lint-staged": {
-  "*.{ts,tsx}": [
-    "npm run format",
-    "npm run lint",
-    "npm run test"
-  ]
-}
+    "*.{ts,tsx}": [
+      "npm run format",
+      "npm run lint",
+      "npm run test"
+    ]
+  }
 }
