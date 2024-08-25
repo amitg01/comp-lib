@@ -1,1 +1,1 @@
-node check-changed-files.js
+node check-changed-files.cjs
