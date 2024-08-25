@@ -1,6 +1,6 @@
 {
   "name": "@amyth/comp-lib",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "type": "module",
   "main": "dist/index.cjs.js",
@@ -64,7 +64,11 @@
     "typescript": "^5.5.4",
     "vite": "^5.4.2",
     "vite-plugin-dts": "^4.0.3",
-    "vitest": "^2.0.5"
+    "vitest": "^2.0.5",
+    "@eslint/compat": "^1.1.1",
+    "eslint-config-eslint": "^11.0.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-config-react-hooks": "^1.0.0"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
@@ -72,10 +76,5 @@
       "npm run lint"
     ]
   },
-  "dependencies": {
-    "@eslint/compat": "^1.1.1",
-    "eslint-config-eslint": "^11.0.0",
-    "eslint-config-react": "^1.1.7",
-    "eslint-config-react-hooks": "^1.0.0"
-  }
+  "dependencies": {}
 }
