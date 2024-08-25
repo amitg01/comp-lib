@@ -4,7 +4,7 @@ import { render, screen } from '@testing-library/react';
 import Button from '../Button';
 
 describe('Button component', () => {
-  console.log('test 123');
+  console.log('test 1234');
 
   it('Button should render correctly', () => {
     render(<Button />);
