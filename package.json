@@ -21,7 +21,7 @@
     "prepare": "husky"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@{amitg01}"
+    "registry": "https://registry.npmjs.org/"
   },
   "keywords": [],
   "author": "",
