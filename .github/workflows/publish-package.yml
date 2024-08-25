@@ -1,4 +1,4 @@
-name: Publish on GitHub
+name: Publish npm
 
 on:
   push:
@@ -6,29 +6,28 @@ on:
       - main
 
 jobs:
-  publish-gpr:
+  publish:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3 # Updated to the latest version
 
-      - uses: actions/setup-node@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3 # Updated to the latest version
         with:
-          node-version: 18
-          registry-url: https://npm.pkg.github.com/
-          scope: '@{USER_NAME}'
+          node-version: '18'
+          registry-url: https://registry.npmjs.org/
 
-      - run: npm install --legacy-peer-deps
+      - name: Install dependencies
+        run: npm i --legacy-peer-deps
 
-      - run: npm run lint
+      - name: Run tests
+        run: npm test # Ensure tests pass before publishing
 
-      - run: npm run test
+      - name: Build project
+        run: npm run build # Ensure the project is built before publishing, if needed
 
-      - run: npm run build
-
-      - name: Verify Build Output
-        run: ls -la dist # Adjust to your build output directory
-
-      - run: npm publish
+      - name: Publish to npm
+        run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.COMP_LIB }}
