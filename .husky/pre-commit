@@ -1,1 +1,1 @@
-npx lint-staged
+node check-changed-files.js
