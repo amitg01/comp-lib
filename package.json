@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
-    "lint": "eslint --fix",
+    "lint": "eslint . --fix",
     "build": "tsc && vite build",
     "test": "vitest run",
     "test-watch": "vitest",
@@ -71,5 +71,11 @@
       "npm run format",
       "npm run lint"
     ]
+  },
+  "dependencies": {
+    "@eslint/compat": "^1.1.1",
+    "eslint-config-eslint": "^11.0.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-config-react-hooks": "^1.0.0"
   }
 }
