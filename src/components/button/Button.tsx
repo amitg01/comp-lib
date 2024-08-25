@@ -36,7 +36,7 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   ...props
 }) => {
-  console.log('test');
+  console.log('test 123');
   return (
     <StyledButton
       type="button"
