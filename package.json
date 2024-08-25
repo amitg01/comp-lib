@@ -67,7 +67,7 @@
     "*.{ts,tsx}": [
       "npm run format",
       "npm run lint",
-      "npm run test"
+      "node check-changed-files.cjs"
     ]
   }
 }
