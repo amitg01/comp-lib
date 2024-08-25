@@ -1,5 +1,5 @@
 {
-  "name": "comp-lib",
+  "name": "@maitg01/comp-lib",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -19,6 +19,9 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "prepare": "husky"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@{amitg01}"
   },
   "keywords": [],
   "author": "",
